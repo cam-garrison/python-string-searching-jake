@@ -14,7 +14,7 @@ for i in range(len(tokens)):
         if tokens[i][x] in nameslist:
             wordlist[x] = "name"
 
-    
+# run all at once    
 list_complete_strings = []
 for wordlist in tokens:
     complete_string = ''
@@ -23,4 +23,12 @@ for wordlist in tokens:
         complete_string += ' '
     list_complete_strings.append(complete_string)
 
-    
+# run to test
+list_complete_strings = []
+for x in range(len(tokens)):
+    wordlist = tokens[x]
+    complete_string = ''
+    for word in wordlist:
+        complete_string += word
+        complete_string += ' '
+    list_complete_strings.append(complete_string)
