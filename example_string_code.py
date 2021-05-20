@@ -20,3 +20,6 @@ for wordlist in tokens:
     complete_string = ''
     for word in wordlist:
         complete_string += word + ' ' 
+    list_complete_strings.append(complete_string)
+
+    
