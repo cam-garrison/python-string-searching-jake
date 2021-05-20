@@ -2,7 +2,8 @@ import string
 
 
 # This will create a list of lists of words
-tokens = [sub.split() for sub in big_list]
+replaced = [sentence.replace(",", "") for sentence in big_list]
+tokens = [sub.split() for sub in replaced]
 
 
 # loop through list of lists
