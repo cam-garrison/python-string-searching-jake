@@ -19,7 +19,8 @@ list_complete_strings = []
 for wordlist in tokens:
     complete_string = ''
     for word in wordlist:
-        complete_string += word + ' ' 
+        complete_string += word
+        complete_string += ' '
     list_complete_strings.append(complete_string)
 
     
