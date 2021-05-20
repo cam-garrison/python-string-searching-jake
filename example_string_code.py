@@ -13,3 +13,10 @@ for i in range(len(tokens)):
             continue
         if tokens[i][x] in nameslist:
             wordlist[x] = "name"
+
+    
+list_complete_strings = []
+for wordlist in tokens:
+    complete_string = ''
+    for word in wordlist:
+        complete_string += word + ' ' 
