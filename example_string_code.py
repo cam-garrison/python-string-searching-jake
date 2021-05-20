@@ -32,3 +32,12 @@ for x in range(len(tokens)):
         complete_string += word
         complete_string += ' '
     list_complete_strings.append(complete_string)
+
+    
+# changing nameslist to lower with no punctation
+for x in range(len(peoples_names)):
+        name = peoplesnames[x].translate(
+            str.maketrans('', '', string.punctuation))
+        peoples_names[x] = name
+
+name_list = [t.lower() for t in peoples_names]
